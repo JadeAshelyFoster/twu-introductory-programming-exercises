@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eaef92a7-44a5-4f87-8c2a-1f878dd88be4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TrianglePrinter.java" afterPath="$PROJECT_DIR$/src/main/java/TrianglePrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TrianglePrinterTest.java" afterPath="$PROJECT_DIR$/src/test/java/TrianglePrinterTest.java" />
     </list>
     <ignored path="introductory-programming-exercises.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TrianglePrinterTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrianglePrinterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TrianglePrinterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43195266">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#258#259#0" expanded="true" />
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrianglePrinter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrianglePrinter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TrianglePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.60946745">
+              <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -74,8 +73,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TriangleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Triangle.java" />
         <option value="$PROJECT_DIR$/src/test/java/TrianglePrinter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TrianglePrinter.java" />
         <option value="$PROJECT_DIR$/src/test/java/TrianglePrinterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TrianglePrinter.java" />
       </list>
     </option>
   </component>
@@ -439,23 +438,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TrianglePrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TrianglePrinterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43195266">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#258#259#0" expanded="true" />
             <element signature="e#317#318#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrianglePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60946745">
+          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

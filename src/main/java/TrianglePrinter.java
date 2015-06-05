@@ -49,7 +49,11 @@ public class TrianglePrinter {
     }
 
     public String printDiamond(int n) {
-
+        String toPrint = printIsoscelesTriangle(n);
+        for (int i = 0; i > n-1; i--) {
+            String indent = getIndent(i + 2);
+            String line = indent + printMultipleAsterisksHorizontal();
+        }
     }
 
     private String getIndent(int n) {
