@@ -30,8 +30,34 @@ public class TrianglePrinter {
 
     public String printRightTriangle(int n) {
         String toPrint = "";
-        
+        for (int i = 0; i < n; i++) {
+            toPrint = toPrint + printMultipleAsterisksHorizontal(i+1) + "\n";
+            System.out.println();
+        }
         return toPrint;
+    }
+
+    public String printIsoscelesTriangle(int n) {
+        String toPrint = "";
+        for (int i = 0; i < n; i++) {
+            String indent = getIndent(n-i-1);
+            String line = indent + printMultipleAsterisksHorizontal((i*2) + 1);
+            System.out.println(line);
+            toPrint = toPrint + line +"\n";
+        }
+        return toPrint;
+    }
+
+    public String printDiamond(int n) {
+
+    }
+
+    private String getIndent(int n) {
+        String indent = "";
+        for (int i = 0; i < n; i++) {
+            indent = indent + " ";
+        }
+        return indent;
     }
 
 }

@@ -42,6 +42,22 @@ public class TrianglePrinterTest {
         assertEquals("*\n**\n***\n****\n*****\n******\n*******\n********\n", output2);
     }
 
+    @Test
+    public void testPrintIsoscelesTriangle() {
+        String output = testTrianglePrinter.printIsoscelesTriangle(3);
+        assertEquals("  *\n ***\n*****\n", output);
+        String output2 = testTrianglePrinter.printIsoscelesTriangle(4);
+        assertEquals("   *\n  ***\n *****\n*******\n", output2);
+    }
+
+    @Test
+    public void testPrintDiamond() {
+        String output = testTrianglePrinter.printDiamond(3);
+        assertEquals("  *\n ***\n*****\n ***\n  *\n", output);
+        String output2 = testTrianglePrinter.printDiamond(4);
+        assertEquals("   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n", output2);
+    }
+
 
 
 }
