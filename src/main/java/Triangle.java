@@ -23,4 +23,13 @@ public class Triangle {
         return toPrint;
     }
 
+    public String printRightTriangle(int n) {
+        String toPrint = "";
+        for (int i = 1; i < n + 1; i++) {
+            String asterisks = printAsterisksHorizontal(i);
+            toPrint = toPrint + asterisks + "\n";
+        }
+        return toPrint;
+    }
+
 }

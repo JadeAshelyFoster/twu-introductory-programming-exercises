@@ -24,11 +24,18 @@ public class TriangleTest {
         assertEquals("***", output2);
     }
 
-    @Test public void printAsterisksVertial() {
+    @Test public void printNAsterisksVertial() {
         String output = testTriangle.printAsterisksVertical(3);
         assertEquals("*\n*\n*\n", output);
         String output2 = testTriangle.printAsterisksVertical(8);
         assertEquals("*\n*\n*\n*\n*\n*\n*\n*\n", output2);
+    }
+
+    @Test public void printRightTriangle() {
+        String output = testTriangle.printRightTriangle(3);
+        assertEquals("*\n**\n***\n", output);
+        String output2 = testTriangle.printRightTriangle(8);
+        assertEquals("*\n**\n***\n****\n*****\n******\n*******\n********\n", output2);
     }
 
 
