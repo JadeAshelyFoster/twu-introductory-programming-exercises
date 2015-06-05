@@ -1,22 +1,34 @@
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TriangleTest {
+    Triangle testTriangle;
+
+    @Before
+    public void setUp() {
+        testTriangle = new Triangle();
+    }
 
     @Test
     public void printOneAsterikToTheConsole() {
-        Triangle testTriangle = new Triangle();
-        String output = testTriangle.printAsterisks(1);
+        String output = testTriangle.printAsterisksHorizontal(1);
         assertEquals("*", output);
     }
 
     @Test
     public void printNAsterisks() {
-        Triangle testTriangle = new Triangle();
-        String output = testTriangle.printAsterisks(8);
+        String output = testTriangle.printAsterisksHorizontal(8);
         assertEquals("********", output);
-        String output2 = testTriangle.printAsterisks(3);
+        String output2 = testTriangle.printAsterisksHorizontal(3);
         assertEquals("***", output2);
+    }
+
+    @Test public void printAsterisksVertial() {
+        String output = testTriangle.printAsterisksVertical(3);
+        assertEquals("*\n*\n*\n", output);
+        String output2 = testTriangle.printAsterisksVertical(8);
+        assertEquals("*\n*\n*\n*\n*\n*\n*\n*\n", output2);
     }
 
 
