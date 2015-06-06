@@ -48,4 +48,20 @@ public class TrianglePrinterTest {
         String output2 = testTrianglePrinter.getIsoscelesTriangle(8);
         assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n***************\n", output2);
     }
+
+    @Test
+    public void testGetDiamond() {
+        String output = testTrianglePrinter.getDiamond(3);
+        assertEquals("  *\n ***\n*****\n ***\n  *\n", output);
+        String output2 = testTrianglePrinter.getDiamond(8);
+        assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n***************\n *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n", output2);
+    }
+    
+    @Test void testGetDiamondWithName() {
+        String output = testTrianglePrinter.getDiamond(3);
+        assertEquals("  *\n ***\nBill\n ***\n  *\n", output);
+        String output2 = testTrianglePrinter.getDiamond(8);
+        assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\nJade\n *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n", output2);
+    }
+
 }
