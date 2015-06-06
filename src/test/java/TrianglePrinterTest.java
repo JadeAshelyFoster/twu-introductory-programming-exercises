@@ -56,11 +56,12 @@ public class TrianglePrinterTest {
         String output2 = testTrianglePrinter.getDiamond(8);
         assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n***************\n *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n", output2);
     }
-    
-    @Test void testGetDiamondWithName() {
-        String output = testTrianglePrinter.getDiamond(3);
+
+    @Test
+    public void testGetDiamondWithName() {
+        String output = testTrianglePrinter.getDiamondWithName(3, "Bill");
         assertEquals("  *\n ***\nBill\n ***\n  *\n", output);
-        String output2 = testTrianglePrinter.getDiamond(8);
+        String output2 = testTrianglePrinter.getDiamondWithName(8, "Jade");
         assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\nJade\n *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n", output2);
     }
 

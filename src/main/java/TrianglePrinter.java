@@ -11,6 +11,7 @@ public class TrianglePrinter {
         //Print out diamond exercises:
         System.out.println(tPrinter.getIsoscelesTriangle(3));
         System.out.println(tPrinter.getDiamond(3));
+        System.out.println(tPrinter.getDiamondWithName(3, "Bill"));
     }
 
     public String getAsterisk() {
@@ -65,4 +66,15 @@ public class TrianglePrinter {
         return diamond;
     }
 
+    public String getDiamondWithName(int n, String name) {
+        String diamond = "";
+        for (int i = 1; i <= n-1; i++) {
+            diamond += getAsterisksHorizontal(i+(i-1), n-i) + "\n";
+        }
+        diamond += name + "\n";
+        for (int i = n-1; i > 0; i--) {
+            diamond += getAsterisksHorizontal(i+(i-1), n-i) + "\n";
+        }
+        return diamond;
+    }
 }
