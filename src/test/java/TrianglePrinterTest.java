@@ -19,9 +19,9 @@ public class TrianglePrinterTest {
 
     @Test
     public void testGetHorizontalLineOfNAsterisks() {
-        String output = testTrianglePrinter.getAsterisksHorizontal(8);
+        String output = testTrianglePrinter.getAsterisksHorizontal(8, 0);
         assertEquals("********", output);
-        String output2 = testTrianglePrinter.getAsterisksHorizontal(3);
+        String output2 = testTrianglePrinter.getAsterisksHorizontal(3, 0);
         assertEquals("***", output2);
     }
 
@@ -39,5 +39,13 @@ public class TrianglePrinterTest {
         assertEquals("*\n**\n***\n", output);
         String output2 = testTrianglePrinter.getRightHandedTriangle(8);
         assertEquals("*\n**\n***\n****\n*****\n******\n*******\n********\n", output2);
+    }
+
+    @Test
+    public void testGetIsoscelesTriangle() {
+        String output = testTrianglePrinter.getIsoscelesTriangle(3);
+        assertEquals("  *\n ***\n*****\n", output);
+        String output2 = testTrianglePrinter.getIsoscelesTriangle(8);
+        assertEquals("       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n***************\n", output2);
     }
 }

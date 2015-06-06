@@ -5,21 +5,31 @@ public class TrianglePrinter {
         TrianglePrinter tPrinter = new TrianglePrinter();
         //Print out Triangle exercises:
         System.out.println(tPrinter.getAsterisk());
-        System.out.println(tPrinter.getAsterisksHorizontal(8));
+        System.out.println(tPrinter.getAsterisksHorizontal(8, 0));
         System.out.println(tPrinter.getAsterisksVertical(3));
         System.out.println(tPrinter.getRightHandedTriangle(3));
+        //Print out diamond exercises:
+        System.out.println(tPrinter.getIsoscelesTriangle(3));
     }
 
     public String getAsterisk() {
         return "*";
     }
 
-    public String getAsterisksHorizontal(int n) {
+    public String getAsterisksHorizontal(int n, int indentLength) {
         String asterisks = "";
         for (int i =0; i < n; i++) {
             asterisks += getAsterisk();
         }
-        return asterisks;
+        return getIndent(indentLength) + asterisks;
+    }
+
+    private String getIndent(int indentLength) {
+        String indent = "";
+        for (int i = 0; i < indentLength; i++) {
+            indent += " ";
+        }
+        return indent;
     }
 
     public String getAsterisksVertical(int n) {
@@ -32,8 +42,16 @@ public class TrianglePrinter {
 
     public String getRightHandedTriangle(int n) {
         String triangle = "";
-        for(int i = 1; i < n +1; i++) {
-            triangle += getAsterisksHorizontal(i) + "\n";
+        for(int i = 1; i <= n; i++) {
+            triangle += getAsterisksHorizontal(i, 0) + "\n";
+        }
+        return triangle;
+    }
+
+    public String getIsoscelesTriangle(int n) {
+        String triangle = "";
+        for (int i = 1; i <= n; i++) {
+            triangle += getAsterisksHorizontal(i+(i-1), n-i) + "\n";
         }
         return triangle;
     }
