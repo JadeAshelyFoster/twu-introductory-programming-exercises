@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
@@ -12,9 +14,9 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void testPrint1To10() {
-        String output = testFizzBuzz.printNumberListVertically(1, 10);
-        assertEquals("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n", output);
+    public void testFizzBuzz() {
+        String output = testFizzBuzz.go(15);
+        assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n", output);
     }
 
 }
